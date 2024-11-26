@@ -21,13 +21,15 @@
     <title>Welcome to Tutor</title>
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
       <div class="navbar-flex container">
-        <img src="images/logo.svg" alt="Tutor" />
+        <a href="/" aria-label="Logo Home Link">
+            <img src="images/logo.svg" alt="Tutor Logo" />
+        </a>
         <div class="main-menu-items">
           <ul class="main-menu-list">
             <li>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
               <a href="#chapters">Chapters</a>
@@ -45,12 +47,12 @@
               <a href="contact.html">Contact</a>
             </li>
             <li>
-              <a href="facebook.com" target="_blank">
+              <a href="facebook.com" target="_blank" aria-label="Follow Us On Facebook">
                 <i class="fa-brands fa-facebook"></i>
               </a>
             </li>
             <li>
-              <a href="twitter.com" target="_blank">
+              <a href="twitter.com" target="_blank" aria-label="Follow Us On Twitter">
                 <i class="fa-brands fa-twitter"></i>
               </a>
             </li>
@@ -60,14 +62,14 @@
         <!-- Mobile Menu -->
         <div class="mobile-menu">
           <!-- Hamburger Icon -->
-          <div class="mobile-menu-toggle">
+          <div class="mobile-menu-toggle" role="button" aria-expanded="false" aria-controls="mobile-menu-items">
             <i class="fas fa-bars fa-2x"></i>
           </div>
           <!-- Mobile Menu Items-->
-          <div class="mobile-menu-items">
+          <div id="mobile-menu-items" class="mobile-menu-items" aria-label="Open Mobile Menu" tabindex="0">
             <ul class="mobile-menu-list">
               <li>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
                 <a href="#chapters">Chapters</a>
@@ -553,7 +555,7 @@
      <footer class="footer">
         <div class="container footer-flex">
           <ul class="footer-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="#">Terms</a></li>
             <li><a href="#">Privacy</a></li>
             <li><a href="contact.html">Contact</a></li>
